@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض القنوات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .channel {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .channel button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .channel button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>عرض القنوات</h1>
+    <div class="channel">
+        <h2>إم بي سي مصر 1</h2>
+        <button onclick="playChannel('https://shls-masr-prod-dub.shahid.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8')">تشغيل</button>
+    </div>
+    <div class="channel">
+        <h2>إم بي سي مصر 2</h2>
+        <button onclick="playChannel('https://af.ayassport.ir/hls2/ssc1.m3u8')">تشغيل</button>
+    </div>
+    <div class="channel">
+        <h2>SSC</h2>
+        <button onclick="playChannel('https://af.ayassport.ir/hls2/ssc1.m3u8')">تشغيل</button>
+    </div>
+
+    <script>
+        function playChannel(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
